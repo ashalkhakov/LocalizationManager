@@ -16,7 +16,7 @@
 
 @interface IRTextFieldDrag : NSTextField
 
-@property (nonatomic, weak) IBOutlet id <IRTextFieldDragDelegate> dragDelegate;
+@property (nonatomic, assign) IBOutlet id <IRTextFieldDragDelegate> dragDelegate;
 
 
 @end

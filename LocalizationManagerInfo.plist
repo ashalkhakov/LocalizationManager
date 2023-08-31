@@ -1,0 +1,16 @@
+{
+    CFBundleDevelopmentRegion = en;
+    CFBundleExecutable = "$(EXECUTABLE_NAME)";
+    CFBundleIconFile = "";
+    CFBundleIdentifier = "wurth.$(PRODUCT_NAME:rfc1034identifier)";
+    CFBundleInfoDictionaryVersion = "6.0";
+    CFBundleName = "$(TARGET_NAME)";
+    CFBundlePackageType = APPL;
+    CFBundleShortVersionString = "1.0";
+    CFBundleSignature = "????";
+    CFBundleVersion = 1;
+    LSMinimumSystemVersion = "10.9";
+    NSHumanReadableCopyright = "Copyright \U00A9 2015 Francesca Corsini. All rights reserved.";
+    NSMainNibFile = MainMenu;
+    NSPrincipalClass = NSApplication;
+}

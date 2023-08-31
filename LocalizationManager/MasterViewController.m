@@ -13,10 +13,10 @@
 
 @interface MasterViewController ()
 
-@property (nonatomic, weak) IBOutlet IRTextFieldDrag *openMasterField;
-@property (nonatomic, weak) IBOutlet IRTextFieldDrag *openSecondaryField;
-@property (weak) IBOutlet NSScrollView *console;
-@property (weak) IBOutlet NSSegmentedControl *filterStrings;
+@property (nonatomic, assign) IBOutlet IRTextFieldDrag *openMasterField;
+@property (nonatomic, assign) IBOutlet IRTextFieldDrag *openSecondaryField;
+@property (assign) IBOutlet NSScrollView *console;
+@property (assign) IBOutlet NSSegmentedControl *filterStrings;
 
 @end
 

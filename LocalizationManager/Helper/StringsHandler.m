@@ -44,7 +44,7 @@ static StringsHandler *istance;
 {
     NSMutableString *str = @"".mutableCopy;
     NSRange range = NSMakeRange(0, 1);
-    for (__unused int i = (int)range.location; range.location < [string length]; range.location++)
+    for (int i = (int)range.location; range.location < [string length]; range.location++)
     {
         NSString *substring = [string substringWithRange:range];
         if ([substring isEqualToString:@"”"] || [substring isEqualToString:@"“"])
@@ -52,6 +52,8 @@ static StringsHandler *istance;
         else
             [str appendString:substring];
     }
+
+    [str autorelease];
     
     return str;
 }
@@ -231,7 +233,7 @@ static StringsHandler *istance;
     };
     
     NSRange range = NSMakeRange(0, 1);
-    for (__unused int i = (int)range.location; range.location < [attrString.string length]; range.location++)
+    for (int i = (int)range.location; range.location < [attrString.string length]; range.location++)
     {
         NSString *substring = [attrString.string substringWithRange:range];
         if ([substring isEqualToString:@"\"\""])
@@ -244,6 +246,7 @@ static StringsHandler *istance;
    // NSRange range = [attrString.string rangeOfString:@"\"\""];
    // [attrString setAttributes:dict range:range];
 
+    [attrString autorelease];
     
     return attrString;
 }

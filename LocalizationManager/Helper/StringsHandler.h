@@ -20,16 +20,16 @@ typedef void(^FailedBlock)(NSString*);
 }
 
 // the array with the strings from the master .strings file
-@property (nonatomic, strong) NSMutableArray *masterStrings;
+@property (nonatomic, retain) NSMutableArray *masterStrings;
 
 // the array with the strings from the secondary .strings file
-@property (nonatomic, strong) NSMutableArray *secondaryStrings;
+@property (nonatomic, retain) NSMutableArray *secondaryStrings;
 
 // the array with all the strings from 2 .strings file
-@property (nonatomic, strong) NSMutableArray *mergedStrings;
+@property (nonatomic, retain) NSMutableArray *mergedStrings;
 
 // the array with only the differences between the 2 .strings  file
-@property (nonatomic, strong) NSMutableArray *diffStrings;
+@property (nonatomic, retain) NSMutableArray *diffStrings;
 
 // init
 + (instancetype)sharedInstance;
